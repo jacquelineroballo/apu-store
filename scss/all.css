@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Quicksand:wght@400;500;600;700&display=swap");
-@import url("http://fonts.cdnfonts.com/css/simpsonfont?styles=11949,11948");
-body {
+.titulo {
   font-family: "Akbar", sans-serif;
+  font-size: 30px;
 }
 
-#content .navbar {
-  font-family: "Akbar", sans-serif;
+.descripcion {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+#content #navbar {
+  font-family: "Akbar", sans-serif !important;
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,17 @@
+@mixin titulo {
+    font-family: $tipografia-uno;
+}
+
+.titulo {
+    @include titulo;
+    font-size: 30px;
+}
+
+@mixin descripcion {
+    font-family: $tipografia-dos;
+}
+
+.descripcion {
+    @include descripcion;
+    font-size: 20px;
+}

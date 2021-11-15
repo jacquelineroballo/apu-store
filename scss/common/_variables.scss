@@ -1,12 +1,5 @@
 //Tipografía
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Quicksand:wght@400;500;600;700&display=swap");
-@import url("http://fonts.cdnfonts.com/css/simpsonfont?styles=11949,11948");
-
 $tipografia-uno: "Akbar", sans-serif;
 $tipografia-dos: "Quicksand", sans-serif;
 $tipografia-tres: "Lato", sans-serif;
-
-body {
-    font-family: $tipografia-uno;
-}
