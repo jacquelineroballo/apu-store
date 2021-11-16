@@ -1,3 +1,5 @@
+//Tipografía
+
 @mixin titulo {
     font-family: $tipografia-uno;
 }
@@ -14,4 +16,12 @@
 .descripcion {
     @include descripcion;
     font-size: 20px;
+}
+
+@mixin subrayado {
+    text-shadow: 2px 2px 0px $rosa, 4px 3px 0px $amarillo;
+}
+
+.subrayado {
+    @include subrayado;
 }

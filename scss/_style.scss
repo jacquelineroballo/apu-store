@@ -2,6 +2,25 @@
     #navbar {
         font-family: $tipografia-uno !important;
     }
-    .quienes-somos {
+    #hero {
+        .carousel-inner {
+            height: 850px;
+        }
+    }
+    #quienes-somos {
+        .quienes-somos-img {
+            filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
+            &:hover {
+                filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+                transition: 0.15s ease-in-out;
+            }
+        }
+    }
+    #tienda {
+        background: $amarillo;
+        background: -webkit-linear-gradient(to bottom, $rosa, $amarillo);
+        background: linear-gradient(to bottom, $rosa, $amarillo);
+
+        position: relative;
     }
 }

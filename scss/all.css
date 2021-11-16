@@ -8,7 +8,34 @@
   font-size: 20px;
 }
 
+.subrayado {
+  text-shadow: 2px 2px 0px #e8a9ca, 4px 3px 0px #f9dd04;
+}
+
 #content #navbar {
   font-family: "Akbar", sans-serif !important;
+}
+
+#content #hero .carousel-inner {
+  height: 850px;
+}
+
+#content #quienes-somos .quienes-somos-img {
+  -webkit-filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+#content #quienes-somos .quienes-somos-img:hover {
+  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+#content #tienda {
+  background: #f9dd04;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e8a9ca), to(#f9dd04));
+  background: linear-gradient(to bottom, #e8a9ca, #f9dd04);
+  position: relative;
 }
 /*# sourceMappingURL=all.css.map */
