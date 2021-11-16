@@ -23,4 +23,81 @@
 
         position: relative;
     }
+    #tienda-cards {
+        font-family: $tipografia-dos;
+        text-align: center;
+        .container {
+            padding-bottom: 100px;
+            a {
+                text-decoration: none;
+                outline: none;
+                .card-flyer {
+                    border-radius: 1rem;
+                    background: $blanco;
+                    margin-top: 50px;
+                    -webkit-transition: all 0.2s ease-in;
+                    -moz-transition: all 0.2s ease-in;
+                    -ms-transition: all 0.2s ease-in;
+                    -o-transition: all 0.2s ease-in;
+                    transition: all 0.2s ease-in;
+                    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+                    &:hover {
+                        box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+                        transition: all 0.2s ease-in;
+                        -webkit-transition: all 0.2s ease-in;
+                        -moz-transition: all 0.2s ease-in;
+                        -ms-transition: all 0.2s ease-in;
+                        -o-transition: all 0.2s ease-in;
+                        transition: all 0.2s ease-in;
+                        .card-img {
+                            opacity: 0.7;
+                            -webkit-transform: scale(1.15);
+                            -moz-transform: scale(1.15);
+                            -ms-transform: scale(1.15);
+                            -o-transform: scale(1.15);
+                            transform: scale(1.15);
+                        }
+                    }
+                    .text-box {
+                        .text-container {
+                            padding: 30px 18px;
+                            p {
+                                margin-top: 10px;
+                                margin-bottom: 0px;
+                                padding-bottom: 0px;
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                color: $negro;
+                            }
+                            h6 {
+                                font-family: $tipografia-dos;
+                                margin-top: 0px;
+                                margin-bottom: 4px;
+                                font-size: 18px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                color: $rosa;
+                            }
+                        }
+                    }
+                    .image-box {
+                        background: #ffffff;
+                        overflow: hidden;
+                        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+                        border-radius: 1rem;
+                        .card-img {
+                            -webkit-transition: all 0.9s ease;
+                            -moz-transition: all 0.9s ease;
+                            -o-transition: all 0.9s ease;
+                            -ms-transition: all 0.9s ease;
+                            transition: all 0.9s ease;
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

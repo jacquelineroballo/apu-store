@@ -18,10 +18,18 @@
     font-size: 20px;
 }
 
-@mixin subrayado {
+@mixin subrayado-color {
     text-shadow: 2px 2px 0px $rosa, 4px 3px 0px $amarillo;
 }
 
-.subrayado {
-    @include subrayado;
+.subrayado-color {
+    @include subrayado-color;
+}
+
+@mixin subrayado-blanco {
+    text-shadow: 4px 3px 0px $blanco;
+}
+
+.subrayado-blanco {
+    @include subrayado-blanco;
 }
