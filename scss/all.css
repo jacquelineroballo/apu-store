@@ -9,7 +9,7 @@
 }
 
 .subrayado-color {
-  text-shadow: 2px 2px 0px #e8a9ca, 4px 3px 0px #f9dd04;
+  text-shadow: 2px 2px 0px #f9dd04, 4px 3px 0px #f15f30;
 }
 
 .subrayado-blanco {
@@ -20,44 +20,60 @@
   font-family: "Akbar", sans-serif !important;
 }
 
-#content #hero .carousel-inner {
-  height: 850px;
-}
-
 #content #quienes-somos .quienes-somos-img {
   -webkit-filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 #content #quienes-somos .quienes-somos-img:hover {
   -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-  -webkit-transition: 0.15s ease-in-out;
-  transition: 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 #content #tienda {
-  background: #f9dd04;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e8a9ca), to(#f9dd04));
-  background: linear-gradient(to bottom, #e8a9ca, #f9dd04);
   position: relative;
+  width: 100%;
+  height: 650px;
 }
 
-#content #tienda-cards {
+#content #tienda::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f15f30;
+  background: linear-gradient(15deg, #f16030 39%, #fed521 79%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+#content #tienda::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+#content .tienda-cards {
   font-family: "Quicksand", sans-serif;
   text-align: center;
-}
-
-#content #tienda-cards .container {
   padding-bottom: 100px;
 }
 
-#content #tienda-cards .container a {
+#content .tienda-cards a {
   text-decoration: none;
   outline: none;
 }
 
-#content #tienda-cards .container a .card-flyer {
+#content .tienda-cards a .card-flyer {
+  height: 30rem;
   border-radius: 1rem;
   background: #ffffff;
   margin-top: 50px;
@@ -67,7 +83,7 @@
           box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
-#content #tienda-cards .container a .card-flyer:hover {
+#content .tienda-cards a .card-flyer:hover {
   -webkit-box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in;
@@ -75,26 +91,27 @@
   transition: all 0.2s ease-in;
 }
 
-#content #tienda-cards .container a .card-flyer:hover .card-img {
+#content .tienda-cards a .card-flyer:hover .card-img {
   opacity: 0.7;
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
 
-#content #tienda-cards .container a .card-flyer .text-box .text-container {
+#content .tienda-cards a .card-flyer .text-box .text-container {
   padding: 30px 18px;
 }
 
-#content #tienda-cards .container a .card-flyer .text-box .text-container p {
+#content .tienda-cards a .card-flyer .text-box .text-container p {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   font-size: 14px;
   letter-spacing: 1px;
+  text-align: justify;
   color: #000000;
 }
 
-#content #tienda-cards .container a .card-flyer .text-box .text-container h6 {
+#content .tienda-cards a .card-flyer .text-box .text-container h6 {
   font-family: "Quicksand", sans-serif;
   margin-top: 0px;
   margin-bottom: 4px;
@@ -102,10 +119,10 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #e8a9ca;
+  color: #f15f30;
 }
 
-#content #tienda-cards .container a .card-flyer .image-box {
+#content .tienda-cards a .card-flyer .image-box {
   background: #ffffff;
   overflow: hidden;
   -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
@@ -113,7 +130,7 @@
   border-radius: 1rem;
 }
 
-#content #tienda-cards .container a .card-flyer .image-box .card-img {
+#content .tienda-cards a .card-flyer .image-box .card-img {
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   width: 100%;

@@ -70,7 +70,9 @@
                 <a class="nav-link" href="#">Inicio</a>
               </li>
               <li class="nav-item me-5">
-                <a class="nav-link" href="#quienes-somos">Sobre Nosotros</a>
+                <a class="nav-link" href="#quienes-somos-ancla"
+                  >Sobre Nosotros</a
+                >
               </li>
               <li class="nav-item me-5">
                 <a class="nav-link" href="#">Nuestra Tienda</a>
@@ -124,7 +126,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://media.metrolatam.com/2018/01/31/memenetflixsimpsons-1200x600.jpg"
+                src="https://www.teahub.io/photos/full/3-32832_homer-simpsons-stoned-hd-desktop-wallpaper-mobile-desktop.jpg"
                 class="d-block w-100 opacity-75 hero-img"
                 alt="hero-img"
               />
@@ -157,6 +159,8 @@
           </button>
         </div>
       </main>
+      <!-- Fin hero -->
+      <a id="quienes-somos-ancla"></a>
       <section class="container" id="quienes-somos">
         <div class="row my-5">
           <div class="col-md-2">
@@ -174,8 +178,13 @@
             </p>
             <p class="descripcion mb-0">
               Contamos con artículos
-              <strong class="subrayado">únicos</strong> como también
-              <strong class="subrayado">personalizados</strong> y a medida.
+              <strong class="subrayado-color">únicos</strong> y también
+              realizamos pedidos
+              <strong class="subrayado-color">personalizados</strong> y a
+              medida.
+            </p>
+            <p class="descripcion subrayado-color my-3">
+              <strong>¿ Qué estás esperando ?</strong>
             </p>
             <p class="descripcion mb-0">
               Entrá a la tienda y conocé todos nuestros productos !
@@ -191,128 +200,208 @@
           </div>
         </div>
       </section>
+      <!-- Fin quienes somos-->
       <section class="container-fluid px-0" id="tienda">
-        <div style="overflow: hidden">
-          <svg
-            preserveAspectRatio="none"
-            viewBox="0 0 1200 120"
-            xmlns="http://www.w3.org/2000/svg"
-            style="
-              fill: #ffffff;
-              width: 100vw;
-              height: 67px;
-              transform: scaleX(-1);
-            "
-          >
-            <path
-              d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z"
-            />
-          </svg>
-        </div>
-        <div class="container row mx-auto">
-          <div class="col-md-11 text-center">
-            <h1 class="titulo subrayado-blanco mb-5">Tienda</h1>
+        <div class="container row mx-auto position-relative">
+          <div class="col-md-12 mt-5 text-center">
+            <h1 class="titulo subrayado-blanco mb-5">Ofertas de la semana</h1>
           </div>
-          <div id="tienda-cards">
-            <div class="container">
+          <div class="col-md-12 separador shadow"></div>
+          <div class="col-md-12 tienda-cards ofertas">
+            <div class="row d-flex justify-content-between">
+              <div class="col-12 col-md-3">
+                <a href="">
+                  <div class="card-flyer">
+                    <div class="text-box">
+                      <div class="image-box">
+                        <img
+                          class="card-img"
+                          src="img/tienda/duff.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-container">
+                        <h6>Cerveza Duff</h6>
+                        <p>
+                          El toque secreto está dado por las aguas procedentes
+                          de los manantiales Duff aparentemente cristalinas pero
+                          están contaminadas por la central nuclear del señor
+                          Burns.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Duff -->
+              <div class="col-12 col-md-3">
+                <a href="">
+                  <div class="card-flyer">
+                    <div class="text-box">
+                      <div class="image-box">
+                        <img
+                          class="card-img"
+                          src="img/tienda/malk.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-container">
+                        <h6>Malk</h6>
+                        <p>
+                          Un sustitutivo de la leche que pese a contener
+                          vitamina R (🤔), no aporta el calcio que supuestamente
+                          deberían tomar los integrantes más pequeños de
+                          Springfield en el almuerzo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Malk -->
+              <div class="col-12 col-md-3">
+                <a href="">
+                  <div class="card-flyer">
+                    <div class="text-box">
+                      <div class="image-box">
+                        <img
+                          class="card-img"
+                          src="img/tienda/stacy-malibu.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-container">
+                        <h6>Stacy Malibú</h6>
+                        <p>
+                          Si en el mundo real hay una muñeca que aglutina la
+                          mayoría de compras de las niñas de la práctica
+                          totalidad de países, en el universo Simpson tiene que
+                          tener su correspondiente parodia, y bueno, la conexión
+                          entre Barbie y Stacy Malibu es más que evidente.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Stacy Malibú -->
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid bg-danger">
+          <div class="container row mx-auto">
+            <div class="col-md-12 tienda-cards">
               <div class="row">
-                <div class="col-12 col-md-3 col-lg-3">
+                <div class="col-12 col-md-3">
                   <a href="">
                     <div class="card-flyer">
                       <div class="text-box">
                         <div class="image-box">
                           <img
                             class="card-img"
-                            src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg"
+                            src="img/tienda/duff.jpg"
                             alt=""
                           />
                         </div>
                         <div class="text-container">
-                          <h6>Title 01</h6>
+                          <h6>Cerveza Duff</h6>
                           <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s.
+                            El toque secreto está dado por las aguas procedentes
+                            de los manantiales Duff aparentemente cristalinas
+                            pero están contaminadas por la central nuclear del
+                            señor Burns.
                           </p>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3">
+                <!-- Duff -->
+                <div class="col-12 col-md-3">
                   <a href="">
                     <div class="card-flyer">
                       <div class="text-box">
                         <div class="image-box">
                           <img
                             class="card-img"
-                            src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_960_720.jpg"
+                            src="img/tienda/malk.jpg"
                             alt=""
                           />
                         </div>
                         <div class="text-container">
-                          <h6>Title 02</h6>
+                          <h6>Malk</h6>
                           <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s.
+                            Un sustitutivo de la leche que pese a contener
+                            vitamina R (🤔), no aporta el calcio que
+                            supuestamente deberían tomar los integrantes más
+                            pequeños de Springfield en el almuerzo.
                           </p>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3">
+                <!-- Malk -->
+                <div class="col-12 col-md-3">
                   <a href="">
                     <div class="card-flyer">
                       <div class="text-box">
                         <div class="image-box">
                           <img
                             class="card-img"
-                            src="https://cdn.pixabay.com/photo/2018/04/06/13/46/poly-3295856_960_720.png"
+                            src="img/tienda/stacy-malibu.jpg"
                             alt=""
                           />
                         </div>
                         <div class="text-container">
-                          <h6>Title 03</h6>
+                          <h6>Stacy Malibú</h6>
                           <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s.
+                            Si en el mundo real hay una muñeca que aglutina la
+                            mayoría de compras de las niñas de la práctica
+                            totalidad de países, en el universo Simpson tiene
+                            que tener su correspondiente parodia, y bueno, la
+                            conexión entre Barbie y Stacy Malibu es más que
+                            evidente.
                           </p>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3">
+                <!-- Stacy Malibú -->
+                <div class="col-12 col-md-3">
                   <a href="">
                     <div class="card-flyer">
                       <div class="text-box">
                         <div class="image-box">
                           <img
                             class="card-img"
-                            src="https://cdn.pixabay.com/photo/2018/03/30/15/12/dog-3275593_960_720.jpg"
+                            src="img/tienda/stacy-malibu.jpg"
                             alt=""
                           />
                         </div>
                         <div class="text-container">
-                          <h6>Title 04</h6>
+                          <h6>Stacy Malibú</h6>
                           <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s.
+                            Si en el mundo real hay una muñeca que aglutina la
+                            mayoría de compras de las niñas de la práctica
+                            totalidad de países, en el universo Simpson tiene
+                            que tener su correspondiente parodia, y bueno, la
+                            conexión entre Barbie y Stacy Malibu es más que
+                            evidente.
                           </p>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
+                <!-- Stacy Malibú -->
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!--Fin tienda-->
     </div>
 
     <script
