@@ -55,7 +55,6 @@
   position: absolute;
   content: "";
   width: 100%;
-  height: 100%;
   background-color: #ffffff;
   -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
           clip-path: polygon(100% 0, 0 100%, 100% 100%);
@@ -135,5 +134,23 @@
   transition: all 0.9s ease;
   width: 100%;
   height: 200px;
+}
+
+#content .tienda-cards a .card-flyer .card-price {
+  background-color: #ffffff;
+}
+
+#content .tienda-cards a .card-flyer .card-price .descripcion {
+  color: #000000;
+}
+
+#content .tienda-cards a .card-flyer .card-price .btn-comprar {
+  color: #f15f30;
+  border-color: #f15f30;
+  border-width: 2px;
+}
+
+#content .tienda-cards a .card-flyer .card-price .btn-comprar:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=all.css.map */

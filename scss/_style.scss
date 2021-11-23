@@ -31,7 +31,6 @@
             position: absolute;
             content: "";
             width: 100%;
-            height: 100%;
             background-color: $blanco;
             clip-path: polygon(100% 0, 0 100%, 100% 100%);
         }
@@ -108,6 +107,20 @@
                         transition: all 0.9s ease;
                         width: 100%;
                         height: 200px;
+                    }
+                }
+                .card-price {
+                    background-color: $blanco;
+                    .descripcion {
+                        color: $negro;
+                    }
+                    .btn-comprar {
+                        color: $naranja;
+                        border-color: $naranja;
+                        border-width: 2px;
+                        &:hover {
+                            color: $blanco;
+                        }
                     }
                 }
             }
