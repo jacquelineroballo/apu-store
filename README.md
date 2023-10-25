@@ -2,5 +2,6 @@
 
 Tienda ficticia inspirada en Los Simpsons
 
-![imagen](https://github.com/jacquelineroballo/simpsons-store/assets/30833076/d07a130a-1081-409a-adfc-20e131393a80)
+![imagen](https://github.com/jacquelineroballo/simpsons-store/assets/30833076/52c809e0-4848-4b4b-9ae5-45171caabe83)
+
 
