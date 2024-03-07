@@ -1,6 +1,6 @@
 #content {
     #navbar {
-        font-family: $tipografia-uno !important;
+        font-family: $tipografia-uno;
     }
     #hero {
     }
@@ -42,7 +42,7 @@
             text-decoration: none;
             outline: none;
             .card-flyer {
-                height: 30rem;
+                height: 24rem;
                 border-radius: 1rem;
                 background: $blanco;
                 margin-top: 50px;

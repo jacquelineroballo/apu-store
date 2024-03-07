@@ -1,6 +1,7 @@
+@import url("https://fonts.cdnfonts.com/css/akbar");
 .titulo {
   font-family: "Akbar", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .descripcion {
@@ -17,39 +18,30 @@
 }
 
 #content #navbar {
-  font-family: "Akbar", sans-serif !important;
+  font-family: "Akbar", sans-serif;
 }
-
 #content #quienes-somos .quienes-somos-img {
-  -webkit-filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
-  -webkit-transition: all 0.15s ease;
+  filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
   transition: all 0.15s ease;
 }
-
 #content #quienes-somos .quienes-somos-img:hover {
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-  -webkit-transition: all 0.15s ease;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
   transition: all 0.15s ease;
 }
-
 #content #tienda {
   position: relative;
   width: 100%;
 }
-
 #content #tienda::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 650px;
-  background: #f15f30;
-  background: linear-gradient(15deg, #f16030 39%, #fed521 79%);
+  background: rgb(241, 95, 48);
+  background: linear-gradient(15deg, rgb(241, 96, 48) 39%, rgb(254, 213, 33) 79%);
   -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
           clip-path: polygon(100% 0, 0 0, 0 100%);
 }
-
 #content #tienda::after {
   position: absolute;
   content: "";
@@ -58,49 +50,38 @@
   -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
           clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
-
 #content .tienda-cards {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   padding-bottom: 50px;
 }
-
 #content .tienda-cards a {
   text-decoration: none;
   outline: none;
 }
-
 #content .tienda-cards a .card-flyer {
-  height: 30rem;
+  height: 24rem;
   border-radius: 1rem;
   background: #ffffff;
   margin-top: 50px;
-  -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.2s ease-in;
 }
-
 #content .tienda-cards a .card-flyer:hover {
-  -webkit-box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
-
 #content .tienda-cards a .card-flyer:hover .card-img {
   opacity: 0.7;
-  -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
-
 #content .tienda-cards a .card-flyer .text-box .text-container {
   padding: 30px 18px;
 }
-
 #content .tienda-cards a .card-flyer .text-box .text-container p {
   margin-top: 10px;
   margin-bottom: 0px;
@@ -110,7 +91,6 @@
   text-align: justify;
   color: #000000;
 }
-
 #content .tienda-cards a .card-flyer .text-box .text-container h6 {
   font-family: "Quicksand", sans-serif;
   margin-top: 0px;
@@ -121,48 +101,35 @@
   letter-spacing: 1px;
   color: #f15f30;
 }
-
 #content .tienda-cards a .card-flyer .image-box {
   background: #ffffff;
   overflow: hidden;
-  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
-
 #content .tienda-cards a .card-flyer .image-box .card-img {
-  -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   width: 100%;
   height: 200px;
 }
-
 #content .tienda-cards a .card-flyer .card-price {
   background-color: #ffffff;
 }
-
 #content .tienda-cards a .card-flyer .card-price .descripcion {
   color: #000000;
 }
-
 #content .tienda-cards a .card-flyer .card-price .btn-comprar {
   color: #f15f30;
   border-color: #f15f30;
   border-width: 2px;
 }
-
 #content .tienda-cards a .card-flyer .card-price .btn-comprar:hover {
   color: #ffffff;
 }
-
 #content #eleginos .fas:hover {
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(136, 134, 134, 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(136, 134, 134, 0.5));
-  -webkit-transition: all 0.15s ease;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(136, 134, 134, 0.5));
   transition: all 0.15s ease;
 }
-
 #content #eleginos .descripcion {
   text-align: justify;
-}
-/*# sourceMappingURL=all.css.map */
+}/*# sourceMappingURL=all.css.map */

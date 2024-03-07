@@ -6,7 +6,7 @@
 
 .titulo {
     @include titulo;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 @mixin descripcion {
@@ -19,7 +19,9 @@
 }
 
 @mixin subrayado-color {
-    text-shadow: 2px 2px 0px $amarillo, 4px 3px 0px $naranja;
+    text-shadow:
+        2px 2px 0px $amarillo,
+        4px 3px 0px $naranja;
 }
 
 .subrayado-color {
