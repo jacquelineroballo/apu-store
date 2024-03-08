@@ -8,6 +8,11 @@
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
+@media (max-width: 575px) {
+  .descripcion {
+    font-size: 18px;
+  }
+}
 
 .subrayado-color {
   text-shadow: 2px 2px 0px #f9dd04, 4px 3px 0px #f15f30;
@@ -19,6 +24,31 @@
 
 #content #navbar {
   font-family: "Akbar", sans-serif;
+}
+@media (max-width: 575px) {
+  #content #navbar .navbar-brand {
+    margin: auto;
+  }
+}
+@media (max-width: 575px) {
+  #content #navbar .nav-link {
+    font-size: 13px;
+  }
+}
+#content #navbar .dropdown tr,
+#content #navbar .dropdown #vaciar-carrito {
+  font-size: 16px;
+}
+@media (max-width: 575px) {
+  #content #navbar .dropdown tr,
+  #content #navbar .dropdown #vaciar-carrito {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  #content #hero .hero-img {
+    height: 280px;
+  }
 }
 #content #quienes-somos .quienes-somos-img {
   filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
@@ -50,24 +80,24 @@
   -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
           clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
-#content .tienda-cards {
+#content #tienda .tienda-cards {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   padding-bottom: 50px;
 }
-#content .tienda-cards a {
+#content #tienda .tienda-cards a {
   text-decoration: none;
   outline: none;
 }
-#content .tienda-cards a .card-flyer {
-  height: 24rem;
+#content #tienda .tienda-cards a .card-flyer {
+  height: 25rem;
   border-radius: 1rem;
   background: #ffffff;
   margin-top: 50px;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.2s ease-in;
 }
-#content .tienda-cards a .card-flyer:hover {
+#content #tienda .tienda-cards a .card-flyer:hover {
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -75,14 +105,14 @@
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
-#content .tienda-cards a .card-flyer:hover .card-img {
+#content #tienda .tienda-cards a .card-flyer:hover .card-img {
   opacity: 0.7;
   transform: scale(1.15);
 }
-#content .tienda-cards a .card-flyer .text-box .text-container {
+#content #tienda .tienda-cards a .card-flyer .text-box .text-container {
   padding: 30px 18px;
 }
-#content .tienda-cards a .card-flyer .text-box .text-container p {
+#content #tienda .tienda-cards a .card-flyer .text-box .text-container p {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -91,7 +121,7 @@
   text-align: justify;
   color: #000000;
 }
-#content .tienda-cards a .card-flyer .text-box .text-container h6 {
+#content #tienda .tienda-cards a .card-flyer .text-box .text-container h6 {
   font-family: "Quicksand", sans-serif;
   margin-top: 0px;
   margin-bottom: 4px;
@@ -101,30 +131,35 @@
   letter-spacing: 1px;
   color: #f15f30;
 }
-#content .tienda-cards a .card-flyer .image-box {
+#content #tienda .tienda-cards a .card-flyer .image-box {
   background: #ffffff;
   overflow: hidden;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
-#content .tienda-cards a .card-flyer .image-box .card-img {
+#content #tienda .tienda-cards a .card-flyer .image-box .card-img {
   transition: all 0.9s ease;
   width: 100%;
   height: 200px;
 }
-#content .tienda-cards a .card-flyer .card-price {
+#content #tienda .tienda-cards a .card-flyer .card-price {
   background-color: #ffffff;
 }
-#content .tienda-cards a .card-flyer .card-price .descripcion {
+#content #tienda .tienda-cards a .card-flyer .card-price .descripcion {
   color: #000000;
 }
-#content .tienda-cards a .card-flyer .card-price .btn-comprar {
+#content #tienda .tienda-cards a .card-flyer .card-price .btn-comprar {
   color: #f15f30;
   border-color: #f15f30;
   border-width: 2px;
 }
-#content .tienda-cards a .card-flyer .card-price .btn-comprar:hover {
+#content #tienda .tienda-cards a .card-flyer .card-price .btn-comprar:hover {
   color: #ffffff;
+}
+@media (max-width: 575px) {
+  #content #tienda .tienda-cards a .card-flyer .card-price .btn-comprar {
+    font-size: 16px;
+  }
 }
 #content #eleginos .fas:hover {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(136, 134, 134, 0.5));

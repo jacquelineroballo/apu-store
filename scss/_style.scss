@@ -1,8 +1,32 @@
 #content {
     #navbar {
         font-family: $tipografia-uno;
+        .navbar-brand {
+            @include xs {
+                margin: auto;
+            }
+        }
+        .nav-link {
+            @include xs {
+                font-size: 13px;
+            }
+        }
+        .dropdown {
+            tr,
+            #vaciar-carrito {
+                font-size: 16px;
+                @include xs {
+                    font-size: 13px;
+                }
+            }
+        }
     }
     #hero {
+        .hero-img {
+            @include xs {
+                height: 280px;
+            }
+        }
     }
     #quienes-somos {
         .quienes-somos-img {
@@ -33,74 +57,77 @@
             background-color: $blanco;
             clip-path: polygon(100% 0, 0 100%, 100% 100%);
         }
-    }
-    .tienda-cards {
-        font-family: $tipografia-dos;
-        text-align: center;
-        padding-bottom: 50px;
-        a {
-            text-decoration: none;
-            outline: none;
-            .card-flyer {
-                height: 24rem;
-                border-radius: 1rem;
-                background: $blanco;
-                margin-top: 50px;
-                box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-                @include transicion-uno;
-                &:hover {
-                    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
-                    @include transicion-dos;
-                    .card-img {
-                        @include transicion-img;
+        .tienda-cards {
+            font-family: $tipografia-dos;
+            text-align: center;
+            padding-bottom: 50px;
+            a {
+                text-decoration: none;
+                outline: none;
+                .card-flyer {
+                    height: 25rem;
+                    border-radius: 1rem;
+                    background: $blanco;
+                    margin-top: 50px;
+                    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+                    @include transicion-uno;
+                    &:hover {
+                        box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+                        @include transicion-dos;
+                        .card-img {
+                            @include transicion-img;
+                        }
                     }
-                }
-                .text-box {
-                    .text-container {
-                        padding: 30px 18px;
-                        p {
-                            margin-top: 10px;
-                            margin-bottom: 0px;
-                            padding-bottom: 0px;
-                            font-size: 14px;
-                            letter-spacing: 1px;
-                            text-align: justify;
+                    .text-box {
+                        .text-container {
+                            padding: 30px 18px;
+                            p {
+                                margin-top: 10px;
+                                margin-bottom: 0px;
+                                padding-bottom: 0px;
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                text-align: justify;
+                                color: $negro;
+                            }
+                            h6 {
+                                font-family: $tipografia-dos;
+                                margin-top: 0px;
+                                margin-bottom: 4px;
+                                font-size: 18px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                color: $naranja;
+                            }
+                        }
+                    }
+                    .image-box {
+                        background: #ffffff;
+                        overflow: hidden;
+                        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+                        border-radius: 1rem;
+                        .card-img {
+                            @include transicion-tres;
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                    .card-price {
+                        background-color: $blanco;
+                        .descripcion {
                             color: $negro;
                         }
-                        h6 {
-                            font-family: $tipografia-dos;
-                            margin-top: 0px;
-                            margin-bottom: 4px;
-                            font-size: 18px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            letter-spacing: 1px;
+                        .btn-comprar {
                             color: $naranja;
-                        }
-                    }
-                }
-                .image-box {
-                    background: #ffffff;
-                    overflow: hidden;
-                    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-                    border-radius: 1rem;
-                    .card-img {
-                        @include transicion-tres;
-                        width: 100%;
-                        height: 200px;
-                    }
-                }
-                .card-price {
-                    background-color: $blanco;
-                    .descripcion {
-                        color: $negro;
-                    }
-                    .btn-comprar {
-                        color: $naranja;
-                        border-color: $naranja;
-                        border-width: 2px;
-                        &:hover {
-                            color: $blanco;
+                            border-color: $naranja;
+                            border-width: 2px;
+                            &:hover {
+                                color: $blanco;
+                            }
+                            @include xs {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }

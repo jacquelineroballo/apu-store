@@ -16,6 +16,9 @@
 .descripcion {
     @include descripcion;
     font-size: 20px;
+    @include xs {
+        font-size: 18px;
+    }
 }
 
 @mixin subrayado-color {
