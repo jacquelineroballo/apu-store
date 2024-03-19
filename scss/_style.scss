@@ -11,12 +11,43 @@
                 font-size: 13px;
             }
         }
-        .dropdown {
-            tr,
-            #vaciar-carrito {
-                font-size: 14px;
+        #carrito {
+            .table-sm {
                 @include xs {
-                    font-size: 13px;
+                    display: grid;
+                }
+                tr,
+                #vaciar-carrito {
+                    font-size: 14px;
+                    @include xs {
+                        font-size: 13px;
+                    }
+                }
+                .producto-imagen {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                .producto-titulo {
+                    width: 85px;
+                    @include xs {
+                        width: 75px;
+                    }
+                }
+                .producto-precio {
+                    width: 70px;
+                    @include xs {
+                        width: 65px;
+                    }
+                }
+                .producto-cantidad {
+                    width: 80px;
+                    text-align: center;
+                    @include xs {
+                        width: 65px;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -57,81 +88,63 @@
             background-color: $blanco;
             clip-path: polygon(100% 0, 0 100%, 100% 100%);
         }
+
         .tienda-cards {
             font-family: $tipografia-dos;
             text-align: center;
             padding-bottom: 50px;
-            a {
-                text-decoration: none;
-                outline: none;
-                .card-flyer {
-                    height: 24.3rem;
+            .card {
+                height: 23rem;
+                border-radius: 1rem;
+                background: $blanco;
+                margin-top: 50px;
+                box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+                @include transicion-uno;
+                @include xs {
+                    height: 26rem;
+                }
+                &:hover {
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+                }
+                .card-img {
+                    background: #ffffff;
+                    margin-bottom: 1rem;
+                    overflow: hidden;
+                    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
                     border-radius: 1rem;
-                    background: $blanco;
-                    margin-top: 50px;
-                    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-                    @include transicion-uno;
+                    width: 100%;
+                    height: 200px;
+                }
+                h6 {
+                    font-family: $tipografia-dos;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: $naranja;
+                }
+                p {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    text-align: justify;
+                    color: $negro;
+                }
+                .card-precio {
+                    display: inline-flex;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    color: $negro;
+                    width: 120px;
+                    padding-left: 0.5rem;
+                }
+                .agregar-carrito {
+                    text-transform: uppercase;
+                    width: 140px;
+                    display: inline-flex;
+                    justify-content: center;
                     @include xs {
-                        height: 26rem;
-                    }
-                    &:hover {
-                        box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
-                        @include transicion-dos;
-                        .card-img {
-                            @include transicion-img;
-                        }
-                    }
-                    .text-box {
-                        .text-container {
-                            padding: 30px 18px;
-                            p {
-                                margin-top: 10px;
-                                margin-bottom: 0px;
-                                padding-bottom: 0px;
-                                font-size: 14px;
-                                letter-spacing: 1px;
-                                text-align: justify;
-                                color: $negro;
-                            }
-                            h6 {
-                                font-family: $tipografia-dos;
-                                margin-top: 0px;
-                                margin-bottom: 4px;
-                                font-size: 18px;
-                                font-weight: 700;
-                                text-transform: uppercase;
-                                letter-spacing: 1px;
-                                color: $naranja;
-                            }
-                        }
-                    }
-                    .image-box {
-                        background: #ffffff;
-                        overflow: hidden;
-                        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-                        border-radius: 1rem;
-                        .card-img {
-                            @include transicion-tres;
-                            width: 100%;
-                            height: 200px;
-                        }
-                    }
-                    .card-price {
-                        background-color: $blanco;
-                        .descripcion {
-                            color: $negro;
-                        }
-                        .btn-comprar {
-                            color: $naranja;
-                            border-color: $naranja;
-                            border-width: 2px;
-                            &:hover {
-                                color: $blanco;
-                            }
-                            @include xs {
-                                font-size: 16px;
-                            }
-                        }
+                        font-size: 16px;
                     }
                 }
             }

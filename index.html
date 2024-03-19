@@ -26,6 +26,7 @@
 
 	<body>
 		<div id="content">
+			<!-- Navbar -->
 			<nav
 				class="navbar sticky-top navbar-expand-lg navbar-light bg-white scrolling-navbar shadow-lg"
 				id="navbar"
@@ -38,7 +39,6 @@
 
 					<!-- Links -->
 					<div class="navbar navbar-expand-lg" id="navbar">
-						<!-- Left -->
 						<ul class="navbar-nav mx-auto text-uppercase">
 							<li class="nav-item me-5">
 								<a class="nav-link text-dark" href="#">Inicio</a>
@@ -65,31 +65,26 @@
 									</button>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 										<div id="carrito">
-											<table id="lista-carrito">
+											<table id="lista-carrito" class="table-sm mx-2">
 												<thead>
-													<tr></tr>
+													<tr>
+														<th>Imagen</th>
+														<th>Nombre</th>
+														<th>Precio</th>
+														<th>Cantidad</th>
+														<th></th>
+													</tr>
 												</thead>
 												<tbody></tbody>
 											</table>
-										</div>
 
-										<table class="table table-sm table-hover">
-											<thead>
-												<tr>
-													<th>Imagen</th>
-													<th>Nombre</th>
-													<th>Precio</th>
-													<th>Cantidad</th>
-													<th></th>
-												</tr>
-											</thead>
-										</table>
-										<a
-											href="#"
-											id="vaciar-carrito"
-											class="btn btn-outline-danger btn-sm rounded-pill ms-2"
-											>Vaciar Carrito</a
-										>
+											<a
+												href="#"
+												id="vaciar-carrito"
+												class="btn btn-outline-danger btn-sm rounded-pill ms-2"
+												>Vaciar Carrito</a
+											>
+										</div>
 									</div>
 								</div>
 							</li>
@@ -97,6 +92,7 @@
 					</div>
 				</div>
 			</nav>
+			<!-- Hero -->
 			<main id="hero">
 				<div id="controls" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner shadow">
@@ -142,7 +138,7 @@
 					</button>
 				</div>
 			</main>
-			<!-- Fin hero -->
+			<!-- Quienes somos -->
 			<a id="quienes-somos-ancla"></a>
 			<section class="container" id="quienes-somos">
 				<div class="row my-5">
@@ -169,299 +165,191 @@
 					</div>
 				</div>
 			</section>
-			<!-- Fin quienes somos-->
+			<!-- Tienda -->
 			<section class="container-fluid px-0" id="tienda">
 				<div class="container row mx-auto position-relative">
 					<div class="col-md-12 mt-5 text-center">
 						<h1 class="titulo text-uppercase subrayado-blanco mb-5">Nuestra tienda</h1>
 					</div>
 					<div class="col-md-12 separador"></div>
-					<div class="col-md-12 tienda-cards tienda">
+					<div id="lista-productos" class="col-md-12 tienda-cards">
 						<div class="row d-flex justify-content-between">
 							<!-- Duff -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/duff.jpg" alt="duff" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Cerveza Duff</h6>
-												<p>
-													El toque secreto está dado por las aguas procedentes de los manantiales
-													Duff aparentemente cristalinas pero están contaminadas por la central
-													nuclear del señor Burns.
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$1500 ars</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img class="card-img" src="img/tienda/duff.jpg" alt="duff" />
+									<div class="info-card">
+										<h6>Cerveza Duff</h6>
+										<p class="px-3">
+											El toque secreto está dado por las aguas procedentes de los manantiales Duff
+											aparentemente cristalinas pero están contaminadas por la central nuclear del
+											señor Burns.
+										</p>
+										<div class="card-precio">$1500 ars</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="1"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Malk -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/malk.jpg" alt="malk" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Malk</h6>
-												<p>
-													Un sustitutivo de la leche que pese a contener vitamina R (🤔), no aporta
-													el calcio que supuestamente deberían tomar los integrantes más pequeños de
-													Springfield en el almuerzo.
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$550 ars</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img class="card-img" src="img/tienda/malk.jpg" alt="malk" />
+									<div class="info-card">
+										<h6>Malk</h6>
+										<p class="px-3">
+											Un sustitutivo de la leche que pese a contener vitamina R (🤔), no aporta el
+											calcio que supuestamente deberían tomar los integrantes más pequeños de
+											Springfield en el almuerzo.
+										</p>
+										<div class="card-precio">$550 ars</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="2"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Squishee -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/squishee.jpg" alt="squishee" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Squishee</h6>
-												<p>
-													Son peligrosos para la salud, no tiene ingredientes naturales, ni siquiera
-													agua pura y puede provocar alucinaciones si se ingieren en cantidades
-													suficientes, pero son tan ricos!
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$2500 ars</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img class="card-img" src="img/tienda/squishee.jpg" alt="squishee" />
+									<div class="info-card">
+										<h6>Squishee</h6>
+										<p class="px-3">
+											Son peligrosos para la salud, no tiene ingredientes naturales, ni siquiera
+											agua pura y puede provocar alucinaciones si se ingieren en cantidades
+											suficientes, pero son tan ricos!
+										</p>
+										<div class="card-precio">$2500 ars</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="3"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Focusyn -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/focusyn.jpg" alt="focusyn" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Focusyn</h6>
-												<p>
-													Medicina psicoactiva para prestar atención en clase y ser respetuoso con
-													tus padres. Efectos secundarios: paranoia, pensarque la Liga de Baseball
-													te espía a través de un satélite.
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$1500 usd</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img class="card-img" src="img/tienda/focusyn.jpg" alt="focusyn" />
+									<div class="info-card">
+										<h6>Focusyn</h6>
+										<p class="px-3">
+											Medicina psicoactiva para prestar atención en clase y ser respetuoso con tus
+											padres. Efectos secundarios: paranoia, pensarque la Liga de Baseball te espía
+											a través de un satélite.
+										</p>
+										<div class="card-precio">$1500 usd</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="4"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Stacy Malibú-->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/stacy-malibu.jpg" alt="" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Stacy Malibú</h6>
-												<p>
-													Si en el mundo real hay una muñeca querida por todos el universo Simpson
-													tiene que tener su parodia, la conexión entre Barbie y Stacy Malibu es más
-													que evidente.
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$1000 usd</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img class="card-img" src="img/tienda/stacy-malibu.jpg" />
+									<div class="info-card">
+										<h6>Stacy Malibú</h6>
+										<p class="px-3">
+											Si en el mundo real hay una muñeca querida por todos el universo Simpson tiene
+											que tener su parodia, la conexión entre Barbie y Stacy Malibu es más que
+											evidente.
+										</p>
+										<div class="card-precio">$1000 usd</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="5"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Funzo -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/funzo.jpg" alt="" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Funzo</h6>
-												<p>
-													Este lindo juguete se creó a partir de ideas "prestadas" de los alumnos de
-													Springfield. Están programados para destruir a la competencia y son muy
-													suavecitos.
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$500 usd</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img src="img/tienda/funzo.jpg" class="card-img" alt="funzo" />
+									<div class="info-card">
+										<h6>Funzo</h6>
+										<p class="px-3">
+											Este lindo juguete se creó a partir de ideas "prestadas" de los alumnos de
+											Springfield. Están programados para destruir a la competencia y son muy
+											suavecitos.
+										</p>
+										<div class="card-precio">$500 usd</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="6"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Tomacco -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img class="card-img" src="img/tienda/tomacco.jpg" alt="" />
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Tomacco</h6>
-												<p>
-													La deliciosa y perfecta mezcla entre semillas de tomate, tabaco y barras
-													de plutonio. Produce adicción, violencia y es mortal para sus consumidores
-													(principalmente animales 👀)
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$850 ars</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img src="img/tienda/tomacco.jpg" class="card-img" alt="tomacco" />
+									<div class="info-card">
+										<h6>TOMACCO</h6>
+										<p class="px-3">
+											La deliciosa y perfecta mezcla entre semillas de tomate, tabaco y barras de
+											plutonio. Produce adicción, violencia y es mortal para sus consumidores
+											(principalmente animales 👀)
+										</p>
+										<div class="card-precio">$850 ars</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="7"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
-							<!-- Krusty Burger -->
+
+							<!-- Krusty burger -->
 							<div class="col-12 col-md-3">
-								<a href="">
-									<div class="card-flyer">
-										<div class="text-box">
-											<div class="image-box">
-												<img
-													class="card-img"
-													src="img/tienda/krusty-burguer.jpg"
-													alt="krusty-burger"
-												/>
-											</div>
-											<div class="text-container mt-0 mt-md-2">
-												<h6>Krusty Burguer</h6>
-												<p>
-													La culpable de varios síncopes a Homero por como está hecha, con sus
-													ingredientes NO frescos ni saludables, ahora en venta al público! La
-													favorita de todos en Springfield.
-												</p>
-											</div>
-										</div>
-										<div class="card-price">
-											<div class="row align-items-center">
-												<div class="col-6">
-													<p class="descripcion text-uppercase fw-bold mb-0">$3000 ars</p>
-												</div>
-												<div class="col-6">
-													<button
-														type="button"
-														class="btn btn-outline-danger btn-comprar rounded-pill text-uppercase fw-bold btn-sm"
-													>
-														Comprar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="card">
+									<img class="card-img" src="img/tienda/krusty-burguer.jpg" alt="krusty-burger" />
+									<div class="info-card">
+										<h6>Krusty burger</h6>
+										<p class="px-3">
+											La culpable de varios síncopes a Homero por como está hecha, con sus
+											ingredientes NO frescos ni saludables, ahora en venta al público! La favorita
+											de todos en Springfield.
+										</p>
+										<div class="card-precio">$2000 ars</div>
+										<a
+											href="#"
+											class="agregar-carrito btn btn-outline-danger rounded-pill fw-bold btn-sm"
+											data-id="8"
+											>Comprar</a
+										>
 									</div>
-								</a>
+								</div>
 							</div>
+
 							<!-- Pie de tienda -->
 							<div class="col-12 mt-5">
 								<p class="descripcion mb-0 pt-md-3">
@@ -478,7 +366,7 @@
 					</div>
 				</div>
 			</section>
-			<!--Fin tienda-->
+			<!-- Eleginos -->
 			<section class="container pb-5" id="eleginos">
 				<div class="row justify-content-around">
 					<div class="col-12 text-center mb-5">
@@ -519,7 +407,7 @@
 				</div>
 			</section>
 		</div>
-		<script src="js/all.js"></script>
+		<script src="js/app.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
