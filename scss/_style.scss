@@ -7,9 +7,13 @@
             }
         }
         .nav-link {
+            font-size: 16px;
             @include xs {
                 font-size: 13px;
             }
+        }
+        .dropdown-toggle {
+            font-size: 16px;
         }
         #carrito {
             .table-sm {

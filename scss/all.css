@@ -30,10 +30,16 @@
     margin: auto;
   }
 }
+#content #navbar .nav-link {
+  font-size: 16px;
+}
 @media (max-width: 575px) {
   #content #navbar .nav-link {
     font-size: 13px;
   }
+}
+#content #navbar .dropdown-toggle {
+  font-size: 16px;
 }
 @media (max-width: 575px) {
   #content #navbar #carrito .table-sm {
